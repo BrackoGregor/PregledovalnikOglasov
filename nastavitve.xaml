@@ -1,0 +1,34 @@
+﻿<Window x:Class="gregor_bracko_pregledovalnikOglasov.nastavitve"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:gregor_bracko_pregledovalnikOglasov"
+        mc:Ignorable="d"
+        Title="Nastavitve" Height="240" Width="250" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition ></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Content="Avtomatsko shranjevanje: "></Label>
+        <StackPanel Grid.Row="1" VerticalAlignment="Bottom" Margin="10,0,0,0">
+            <RadioButton GroupName="Shranjevanje" Content="Izklop" IsChecked="True" Checked="RadioButtonShranjevanje_Checked"/>
+            <RadioButton GroupName="Shranjevanje" Content="Vklop" Checked="RadioButtonShranjevanje_Checked"/>
+        </StackPanel>
+
+        <Label Content="Časovni interval (min):" Grid.Row="3"></Label>
+        <StackPanel Grid.Row="4" VerticalAlignment="Top" Margin="10,0,0,0">
+            <RadioButton GroupName="interval" Content="1" IsChecked="True" Checked="RadioButtonInterval_Checked"/>
+            <RadioButton GroupName="interval" Content="2" Checked="RadioButtonInterval_Checked"/>
+            <RadioButton GroupName="interval" Content="3" Checked="RadioButtonInterval_Checked"/>
+        </StackPanel>
+    </Grid>
+</Window>

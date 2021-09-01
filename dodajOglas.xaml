@@ -1,0 +1,77 @@
+﻿<Window x:Class="gregor_bracko_pregledovalnikOglasov.dodajOglas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:gregor_bracko_pregledovalnikOglasov"
+        mc:Ignorable="d"
+        Title="Dodaj oglas" Height="650" Width="320" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="184"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <TabControl Grid.ColumnSpan="2">
+            <TabItem Header="Prodajalec">
+                <StackPanel Width="140" Orientation="Vertical" HorizontalAlignment="Left" Margin="10,0,0,0">
+                    <Label Content="Ime"></Label>
+                    <TextBox Name="txtBoxIme" ></TextBox>
+
+                    <Label Content="Priimek" Margin="0,10,0,0"></Label>
+                    <TextBox Name="txtBoxPriimek"></TextBox>
+
+                    <Label Content="Naslov in hišna številka" Margin="0,10,0,0"></Label>
+                    <TextBox Name="txtBoxNaslov"></TextBox>
+
+                    <Label Content="Poštna številka" Margin="0,10,0,0"></Label>
+                    <TextBox Name="txtBoxPosta"></TextBox>
+
+                    <Label Content="Kraj" Margin="0,10,0,0"></Label>
+                    <TextBox Name="txtBoxKraj"></TextBox>
+
+                    <Label Content="Telefon" Margin="0,10,0,0"></Label>
+                    <TextBox Name="txtBoxTelefon"></TextBox>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Prevozno sredstvo">
+                <StackPanel Orientation="Vertical" Width="280" HorizontalAlignment="Left" Margin="10,0,0,0">
+                    <Label Content="Znamka" Margin="0,0,208,0"></Label>
+                    <TextBox x:Name="txtBoxZnamka" Width="80" HorizontalAlignment="Left"/>
+
+                    <Label Content="Model" Margin="0,10,0,0"></Label>
+                    <TextBox x:Name="txtBoxModel" Width="80" HorizontalAlignment="Left"/>
+
+                    <Label Content="Letnik" Margin="0,10,0,0"></Label>
+                    <TextBox Name="txtBoxLetnik" Width="80" HorizontalAlignment="Left"></TextBox>
+
+                    <Label Content="Tip" Margin="0,10,0,0"></Label>
+                    <RadioButton GroupName="Tip" Content="Avtomobil" IsChecked="True" Checked="RadioButtonTip_Checked"/>
+                    <RadioButton GroupName="Tip" Content="Motorno kolo" Checked="RadioButtonTip_Checked"/>
+
+                    <Label Content="Menjalnik" Margin="0,10,0,0"></Label>
+                    <RadioButton GroupName="Menjalnik" Content="Ročni" IsChecked="True" Checked="RadioButtonMenjalnik_Checked"/>
+                    <RadioButton GroupName="Menjalnik" Content="Avtomatski" Checked="RadioButtonMenjalnik_Checked"/>
+
+                    <Label Content="Gorivo" Margin="0,10,0,0"></Label>
+                    <RadioButton GroupName="Gorivo" Content="Bencin" IsChecked="True" Checked="RadioButtonGorivo_Checked"/>
+                    <RadioButton GroupName="Gorivo" Content="Dizel" Checked="RadioButtonGorivo_Checked"/>
+                    <RadioButton GroupName="Gorivo" Content="Elektrika" Checked="RadioButtonGorivo_Checked"/>
+
+                    <Label Content="Cena" Margin="0,10,0,0"></Label>
+                    <TextBox Name="txtBoxCena" Width="80" HorizontalAlignment="Left"></TextBox>
+
+                    <Label Content="Dodaj slike"></Label>
+                    <Image Name="imgPhoto" Stretch="Fill" Height="50" Width="50" HorizontalAlignment="Left" OpacityMask="Black" Source="images/dodge.jpg" MouseLeftButtonDown="imgPhoto_MouseLeftButtonDown"/>
+                    <Button Name="slika" Width="80" Content="Dodaj sliko" Click="slika_Click" Margin="0,10,0,0" HorizontalAlignment="Left"></Button>
+
+                    <Button Name="btnDodaj" Style="{StaticResource GumbDodaj}" Height="40" Width="60" HorizontalAlignment="Left" Margin="220,10,0,0" Click="btnDodaj_Click">
+                        <Image Source="images/ikone/plus.png"></Image>
+                    </Button>
+
+                    
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

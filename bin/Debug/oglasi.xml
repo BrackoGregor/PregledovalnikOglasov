@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfRazredi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Razredi>
+    <cas>2020-06-14T17:32:08.0531398+02:00</cas>
+    <avtomobil>
+      <cas>0001-01-01T00:00:00</cas>
+      <slike>
+        <string>System.String[]</string>
+      </slike>
+      <znamka>asdasd</znamka>
+      <model>asd</model>
+      <letnik>345345</letnik>
+      <cena>13123123</cena>
+      <tip>Motorno kolo</tip>
+      <menjalnik>Ročni</menjalnik>
+      <gorivo>Dizel</gorivo>
+      <slika>C:\Users\Gregor\Desktop\2.letnik\UV\gregor_bracko_pregledovalnikOglasov\gregor_bracko_pregledovalnikOglasov\images\dodge.jpg</slika>
+    </avtomobil>
+    <prodajalec>
+      <cas>0001-01-01T00:00:00</cas>
+      <ime>asdasd</ime>
+      <priimek>asdasd</priimek>
+      <naslov>asdasd</naslov>
+      <postna>123123</postna>
+      <kraj>asdads</kraj>
+      <telefon>12313</telefon>
+    </prodajalec>
+  </Razredi>
+</ArrayOfRazredi>
